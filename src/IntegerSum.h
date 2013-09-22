@@ -16,12 +16,14 @@ public:
 	IntegerSum();
 	IntegerSum(int n, int m);
 	virtual ~IntegerSum();
-	int getA();
-	int getB();
-	void setA(int n);
-	void setB(int n);
+	
 	string toString();
 	int sum();
+	int getA() const;
+	void setA( int a );
+	int getB() const;
+	void setB( int b );
+
 private:
 	int a, b;
 };

@@ -14,8 +14,45 @@ IntegerSum::IntegerSum() :
 
 }
 
-IntegerSum::~IntegerSum()
+IntegerSum::IntegerSum( int n, int m ) :
+		a ( 0 ),
+		b ( 0 )
 {
-	// TODO Auto-generated destructor stub
+	a = n;
+	b = m;
 }
 
+IntegerSum::~IntegerSum()
+{
+}
+
+
+string IntegerSum::toString()
+{
+	return "A value: " << a << "\nB value: ";
+}
+
+int IntegerSum::sum()
+{
+	return a+b;
+}
+
+int IntegerSum::getA() const
+{
+	return a;
+}
+
+void IntegerSum::setA( int a )
+{
+	this->a = a;
+}
+
+int IntegerSum::getB() const
+{
+	return b;
+}
+
+void IntegerSum::setB( int b )
+{
+	this->b = b;
+}
