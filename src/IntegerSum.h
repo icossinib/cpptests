@@ -17,14 +17,14 @@ public:
 	IntegerSum(int n, int m);
 	virtual ~IntegerSum();
 	
-	string toString();
+	char* toString();
 	int sum();
 	int getA() const;
 	void setA( int a );
 	int getB() const;
 	void setB( int b );
 
-private:
+protected:
 	int a, b;
 };
 

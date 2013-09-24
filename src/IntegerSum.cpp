@@ -27,9 +27,9 @@ IntegerSum::~IntegerSum()
 }
 
 
-string IntegerSum::toString()
+char* IntegerSum::toString()
 {
-	return "A value: " << a << "\nB value: ";
+	return "A value: ";
 }
 
 int IntegerSum::sum()

@@ -7,9 +7,18 @@
 //============================================================================
 
 #include <iostream>
-using namespace std;
+#include "Composed.h"
+
+
 
 int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	IntegerAndString* intAndStr = new IntegerAndString(2,"hola");
+	IntegerSum* intSum = new IntegerSum(3,8);
+	Composed* com = new Composed(*intAndStr, *intSum);
+	Composed* pCom = com;
+	Composed pcom2 = Composed(*intAndStr,*intSum);
+	cout << com->toString();
+	cout << pCom->toString();
+	cout << pcom2.toString();
 	return 0;
 }
